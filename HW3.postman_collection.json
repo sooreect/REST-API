@@ -1,0 +1,937 @@
+{
+	"info": {
+		"name": "HW3",
+		"_postman_id": "4de71db2-1a71-cc1e-4c03-8263665e9f38",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.1.1 Add Boat #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fba497e4-8f42-4bd6-8633-23fc31df0e9b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created boats start at sea\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"boat1id\");",
+							"    pm.environment.set(\"boat1id\", response.id)",
+							"    pm.expect(response.at_sea).to.be.true;",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Hogwarts Express\", \"type\": \"Cabin Cruiser\", \"length\": 999, \"at_sea\": false}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "All newly created boats should start \"At sea\""
+			},
+			"response": []
+		},
+		{
+			"name": "1.1.1 Add Boat #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f0b043b2-145b-4484-88ac-2df91ebdd382",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created boats start at sea\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"boat2id\");",
+							"    pm.environment.set(\"boat2id\", response.id)",
+							"    pm.expect(response.at_sea).to.be.true;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Grimmauld\", \"type\": \"Dinghy\", \"length\": 12}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "All newly created boats should start \"At sea\""
+			},
+			"response": []
+		},
+		{
+			"name": "1.1.1 Add Boat #3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ab0eebe-1a99-476e-abb8-2181957558e3",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created boats start at sea\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"boat3id\");",
+							"    pm.environment.set(\"boat3id\", response.id)",
+							"    pm.expect(response.at_sea).to.be.true;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Dobby\", \"type\": \"Banana\", \"length\": 8, \"at_sea\": true}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "All newly created boats should start \"At sea\""
+			},
+			"response": []
+		},
+		{
+			"name": "1.1.2 Add Slip #1 (Invalid Data is Ignored)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2dd75e4e-9d35-41a8-b57c-3a29f247281b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created slips are empty\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"slip1id\");",
+							"    pm.environment.set(\"slip1id\", response.id)",
+							"    pm.expect(response.current_boat).to.be.null;",
+							"    pm.expect(response.arrival_date).to.be.null;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 9, \"current_boat\": \"nonexistentboat\", \"arrival_date\": \"randomdate\"}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "All newly created slips should be empty"
+			},
+			"response": []
+		},
+		{
+			"name": "1.1.2 Add Slip #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9290441a-e0cc-412d-beb4-dbff9414befa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created slips are empty\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"slip2id\");",
+							"    pm.environment.set(\"slip2id\", response.id)",
+							"    pm.expect(response.current_boat).to.be.null;",
+							"    pm.expect(response.arrival_date).to.be.null;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 11}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "All newly created slips should be empty"
+			},
+			"response": []
+		},
+		{
+			"name": "1.1.2 Add Slip #3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc9ca134-9df3-4295-b544-ad6711a9e2ef",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that all newly created slips are empty\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.environment.unset(\"slip3id\");",
+							"    pm.environment.set(\"slip3id\", response.id)",
+							"    pm.expect(response.current_boat).to.be.null;",
+							"    pm.expect(response.arrival_date).to.be.null;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"number\": 7}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "All newly created slips should be empty"
+			},
+			"response": []
+		},
+		{
+			"name": "1.4.1 View a List of Boats",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "91848d25-94ca-42b4-b24f-6be06789438a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a list of boats is correctly returned\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.length).to.equal(3);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats"
+					]
+				},
+				"description": "User should be able to view an entire collection of entity"
+			},
+			"response": []
+		},
+		{
+			"name": "1.4.1 View a Single Boat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b0152c0-0de3-4eb9-bc8c-2903f4cb15cb",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a single boat is correctly returned\", function () {",
+							"    var response = pm.response.json();",
+							"    var boat1 = pm.environment.get(\"boat1id\");",
+							"    pm.expect(response.id).to.equal(boat1);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats/{{boat1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boat1id}}"
+					]
+				},
+				"description": "User should be able to view a single entity"
+			},
+			"response": []
+		},
+		{
+			"name": "1.4.1 View a List of Slips",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "66cbbdb6-e8a4-40e9-991b-a39fdd3f56a8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a list of boats is correctly returned\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.length).to.equal(3);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips"
+					]
+				},
+				"description": "User should be able to view an entire collection of entity"
+			},
+			"response": []
+		},
+		{
+			"name": "1.4.1 View a Single Slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02da1879-c470-459b-ba25-6c56dab9965e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a single boat is correctly returned\", function () {",
+							"    var response = pm.response.json();",
+							"    var slip1 = pm.environment.get(\"slip1id\");",
+							"    pm.expect(response.id).to.equal(slip1);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": "User should be able to view a single entity"
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat in Empty Slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b39e2b46-8e71-450b-b1fb-29f85432a50c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a boat can successfully arrive at an empty slip\", function () {",
+							"    var boat1 = pm.environment.get(\"boat1id\");",
+							"    pm.expect(pm.response.text()).to.include(boat1);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\": \"{{boat1id}}\", \"arrival_date\": \"11/11/08\"}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": "A ship sould be able to arrive and be assigned a slip number"
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 & 3.2 Park a Boat in Occuppied Slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1aff084b-9742-4da8-868d-e6ab88f3aab0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a boat cannot arrive at an occupied slip\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\": \"{{boat2id}}\"}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": "If the slip is occupied, the server should return an Error 403 Forbidden message"
+			},
+			"response": []
+		},
+		{
+			"name": "1.4.2 View a Specific Boat in Slip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7ed459cc-488e-4ec7-a9a6-7002e199697e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a single boat is correctly returned\", function () {",
+							"    var response = pm.response.json();",
+							"    var boat1 = pm.environment.get(\"boat1id\");",
+							"    pm.expect(response.id).to.equal(boat1);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}/boat",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}",
+						"boat"
+					]
+				},
+				"description": "It should be possible, via a url, to view the specific boat currently occupying any slip."
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 Modify a Boat's Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb82f1a1-e469-450a-8a65-ca930be5ccb7",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a boat's data can be modified\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"\\\"at_sea\\\": false\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Patronus\", \"at_sea\": false}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats/{{boat2id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boat2id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "15b1d50f-4a5b-437d-847a-392f65faa46b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that a boat can be set at sea\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.at_sea).to.be.true;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"at_sea\": true}"
+				},
+				"url": {
+					"raw": "https://tida496hw3.appspot.com/boats/{{boat1id}}",
+					"protocol": "https",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boat1id}}"
+					]
+				},
+				"description": "This should cause the previously occupied slip to become empty. Setting the boat to be at sea and updating the slip status should happen via a single API call."
+			},
+			"response": []
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1834627e-c9bd-4a35-85e9-2138df7c2a27",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that setting a boat at sea empties out the previously occupied slip\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.current_boat).to.be.null;",
+							"    pm.expect(response.arrival_date).to.be.null;",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"at_sea\": true}"
+				},
+				"url": {
+					"raw": "https://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "https",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": "This should cause the previously occupied slip to become empty. Setting the boat to be at sea and updating the slip status should happen via a single API call."
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e05cf4e8-031a-4843-b7e0-e218ef288c86",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\": \"{{boat1id}}\"}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tida496hw3.appspot.com/boats/{{boat1id}}",
+					"protocol": "https",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boat1id}}"
+					]
+				},
+				"description": "Deleting a boat should empty the slip the boat was previously in"
+			},
+			"response": []
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3c9eca8-b47a-4599-937a-ed76cfa930b4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that deleting a parked boat empties out the slip\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.current_boat).to.be.null;",
+							"    pm.expect(response.arrival_date).to.be.null;",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip1id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip1id}}"
+					]
+				},
+				"description": "Deleting a boat should empty the slip the boat was previously in"
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fadd77ec-ae25-46a3-a408-2ba5aa09a427",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"current_boat\": \"{{boat3id}}\"}"
+				},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/slips/{{slip3id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip3id}}"
+					]
+				},
+				"description": "A ship sould be able to arrive and be assigned a slip number"
+			},
+			"response": []
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tida496hw3.appspot.com/slips/{{slip3id}}",
+					"protocol": "https",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"slips",
+						"{{slip3id}}"
+					]
+				},
+				"description": "Deleting a slip a boat is currently in should set the boat to be \"At Sea\""
+			},
+			"response": []
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "372c9f28-709b-4ba0-908a-00ca5f16b822",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Verify that deleting an occupied slip sets boat at sea\", function () {",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.at_sea).to.be.true;",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://tida496hw3.appspot.com/boats/{{boat3id}}",
+					"protocol": "http",
+					"host": [
+						"tida496hw3",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"boats",
+						"{{boat3id}}"
+					]
+				},
+				"description": "Deleting a slip a boat is currently in should set the boat to be \"At Sea\""
+			},
+			"response": []
+		}
+	]
+}

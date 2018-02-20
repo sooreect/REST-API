@@ -1,0 +1,1226 @@
+{
+	"id": "a76a3a34-884c-4016-80e6-3fec9507409e",
+	"name": "HW3",
+	"allTests": [],
+	"timestamp": "2018-02-09T12:02:27.815Z",
+	"collection_id": "4de71db2-1a71-cc1e-4c03-8263665e9f38",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "cc976d29-a08e-1b89-b25b-cc7617ac8929",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "4de71db2-1a71-cc1e-4c03-8263665e9f38",
+		"name": "HW3",
+		"description": "",
+		"order": [
+			"dd038cf3-aa56-a68f-c689-71f93d7076e2",
+			"795d3522-4d96-8483-1593-3d6510788c53",
+			"a30a06f0-53b3-d95f-21db-cf44623aa5f9",
+			"df46934b-bb6c-04fb-f2c9-d490ba4063ef",
+			"64be1a63-68eb-f43f-0a53-3ecac050c5a8",
+			"bca4674e-0d4f-e838-d162-74b919b1a7af",
+			"bc550a4b-0025-61bd-0611-32f2b687cabf",
+			"12ca771b-fab1-656d-8c45-75b1f7548f2b",
+			"76c341c4-1b39-02f9-1f3d-c02541d9e035",
+			"21a55015-72eb-4947-3a30-606d6c0ca237",
+			"505b4a47-353c-e8f1-23ce-684c0e0a94c3",
+			"87b84092-55b0-6ae5-e646-af0aceecf5c7",
+			"3450ed4d-4d92-ca64-2d44-1ce9cbdce7e4",
+			"de31203f-cc1d-20f5-d64d-23bd741a2c78",
+			"4d6f2ed1-a49b-b08a-fd1e-f82fb44af563",
+			"ad8671dc-da1c-aedb-2a8a-41f46644955d",
+			"0954e586-6879-a51a-fed8-9161d4f163c0",
+			"6ec0eeac-e642-6d2d-a315-04f82a97b75a",
+			"1361d947-60c8-453f-6b09-811deb0ca4df",
+			"9a23c184-627e-5950-edac-5cea4dadd446",
+			"6eba6eb1-b923-a303-4df6-419dfa4a5442",
+			"cd8c51c3-371a-c40f-ed2b-d4832756eb47"
+		],
+		"folders": [],
+		"folders_order": [],
+		"timestamp": 1517734714249,
+		"synced": false,
+		"remote_id": 0,
+		"owner": "3573566",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1517734714249,
+		"updatedAt": 1518177042052,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"events": [],
+		"variables": [],
+		"auth": null
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "echo_digest_realm",
+			"value": "Users",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "echo_digest_nonce",
+			"value": "MdPiCd61WUQKa3o1IHfZrtbksWqBdKdL",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "variable_key",
+			"value": 1,
+			"enabled": true,
+			"type": "text"
+		}
+	],
+	"results": [
+		{
+			"name": "1.1.1 Add Boat #1",
+			"id": "dd038cf3-aa56-a68f-c689-71f93d7076e2",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created boats start at sea": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"853"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created boats start at sea": true
+				}
+			],
+			"time": "853",
+			"totalRequestTime": "853",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.1.1 Add Boat #2",
+			"id": "795d3522-4d96-8483-1593-3d6510788c53",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created boats start at sea": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"527"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created boats start at sea": true
+				}
+			],
+			"time": "527",
+			"totalRequestTime": "527",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.1.1 Add Boat #3",
+			"id": "a30a06f0-53b3-d95f-21db-cf44623aa5f9",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created boats start at sea": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"581"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created boats start at sea": true
+				}
+			],
+			"time": "581",
+			"totalRequestTime": "581",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.1.2 Add Slip #1 (Invalid Data is Ignored)",
+			"id": "df46934b-bb6c-04fb-f2c9-d490ba4063ef",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created slips are empty": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"594"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created slips are empty": true
+				}
+			],
+			"time": "594",
+			"totalRequestTime": "594",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.1.2 Add Slip #2",
+			"id": "64be1a63-68eb-f43f-0a53-3ecac050c5a8",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created slips are empty": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"533"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created slips are empty": true
+				}
+			],
+			"time": "533",
+			"totalRequestTime": "533",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.1.2 Add Slip #3",
+			"id": "bca4674e-0d4f-e838-d162-74b919b1a7af",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that all newly created slips are empty": true
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"599"
+			],
+			"allTests": [
+				{
+					"Verify that all newly created slips are empty": true
+				}
+			],
+			"time": "599",
+			"totalRequestTime": "599",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.4.1 View a List of Boats",
+			"id": "bc550a4b-0025-61bd-0611-32f2b687cabf",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a list of boats is correctly returned": true
+			},
+			"testPassFailCounts": {
+				"Verify that a list of boats is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"455"
+			],
+			"allTests": [
+				{
+					"Verify that a list of boats is correctly returned": true
+				}
+			],
+			"time": "455",
+			"totalRequestTime": "455",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.4.1 View a Single Boat",
+			"id": "12ca771b-fab1-656d-8c45-75b1f7548f2b",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a single boat is correctly returned": true
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"501"
+			],
+			"allTests": [
+				{
+					"Verify that a single boat is correctly returned": true
+				}
+			],
+			"time": "501",
+			"totalRequestTime": "501",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.4.1 View a List of Slips",
+			"id": "76c341c4-1b39-02f9-1f3d-c02541d9e035",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a list of boats is correctly returned": true
+			},
+			"testPassFailCounts": {
+				"Verify that a list of boats is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"453"
+			],
+			"allTests": [
+				{
+					"Verify that a list of boats is correctly returned": true
+				}
+			],
+			"time": "453",
+			"totalRequestTime": "453",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.4.1 View a Single Slip",
+			"id": "21a55015-72eb-4947-3a30-606d6c0ca237",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a single boat is correctly returned": true
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"556"
+			],
+			"allTests": [
+				{
+					"Verify that a single boat is correctly returned": true
+				}
+			],
+			"time": "556",
+			"totalRequestTime": "556",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat in Empty Slip",
+			"id": "505b4a47-353c-e8f1-23ce-684c0e0a94c3",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a boat can successfully arrive at an empty slip": true
+			},
+			"testPassFailCounts": {
+				"Verify that a boat can successfully arrive at an empty slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"575"
+			],
+			"allTests": [
+				{
+					"Verify that a boat can successfully arrive at an empty slip": true
+				}
+			],
+			"time": "575",
+			"totalRequestTime": "575",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.3 & 3.2 Park a Boat in Occuppied Slip",
+			"id": "87b84092-55b0-6ae5-e646-af0aceecf5c7",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Verify that a boat cannot arrive at an occupied slip": true
+			},
+			"testPassFailCounts": {
+				"Verify that a boat cannot arrive at an occupied slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"657"
+			],
+			"allTests": [
+				{
+					"Verify that a boat cannot arrive at an occupied slip": true
+				}
+			],
+			"time": "657",
+			"totalRequestTime": "657",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.4.2 View a Specific Boat in Slip",
+			"id": "3450ed4d-4d92-ca64-2d44-1ce9cbdce7e4",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a single boat is correctly returned": true
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"665"
+			],
+			"allTests": [
+				{
+					"Verify that a single boat is correctly returned": true
+				}
+			],
+			"time": "665",
+			"totalRequestTime": "665",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.3 Modify a Boat's Data",
+			"id": "de31203f-cc1d-20f5-d64d-23bd741a2c78",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJmD3AgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a boat's data can be modified": true
+			},
+			"testPassFailCounts": {
+				"Verify that a boat's data can be modified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"580"
+			],
+			"allTests": [
+				{
+					"Verify that a boat's data can be modified": true
+				}
+			],
+			"time": "580",
+			"totalRequestTime": "580",
+			"iterationResults": {}
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 1",
+			"id": "4d6f2ed1-a49b-b08a-fd1e-f82fb44af563",
+			"url": "https://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that a boat can be set at sea": true
+			},
+			"testPassFailCounts": {
+				"Verify that a boat can be set at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"785"
+			],
+			"allTests": [
+				{
+					"Verify that a boat can be set at sea": true
+				}
+			],
+			"time": "785",
+			"totalRequestTime": "785",
+			"iterationResults": {}
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 2",
+			"id": "ad8671dc-da1c-aedb-2a8a-41f46644955d",
+			"url": "https://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that setting a boat at sea empties out the previously occupied slip": true
+			},
+			"testPassFailCounts": {
+				"Verify that setting a boat at sea empties out the previously occupied slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"572"
+			],
+			"allTests": [
+				{
+					"Verify that setting a boat at sea empties out the previously occupied slip": true
+				}
+			],
+			"time": "572",
+			"totalRequestTime": "572",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 1",
+			"id": "0954e586-6879-a51a-fed8-9161d4f163c0",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"805"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "805",
+			"totalRequestTime": "805",
+			"iterationResults": {}
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 1",
+			"id": "6ec0eeac-e642-6d2d-a315-04f82a97b75a",
+			"url": "https://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"549"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "549",
+			"totalRequestTime": "549",
+			"iterationResults": {}
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 2",
+			"id": "1361d947-60c8-453f-6b09-811deb0ca4df",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that deleting a parked boat empties out the slip": true
+			},
+			"testPassFailCounts": {
+				"Verify that deleting a parked boat empties out the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"613"
+			],
+			"allTests": [
+				{
+					"Verify that deleting a parked boat empties out the slip": true
+				}
+			],
+			"time": "613",
+			"totalRequestTime": "613",
+			"iterationResults": {}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 2",
+			"id": "9a23c184-627e-5950-edac-5cea4dadd446",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgK_IwAoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"474"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "474",
+			"totalRequestTime": "474",
+			"iterationResults": {}
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 1",
+			"id": "6eba6eb1-b923-a303-4df6-419dfa4a5442",
+			"url": "https://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgK_IwAoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"693"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "693",
+			"totalRequestTime": "693",
+			"iterationResults": {}
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 2",
+			"id": "cd8c51c3-371a-c40f-ed2b-d4832756eb47",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAwMjFzAgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Verify that deleting an occupied slip sets boat at sea": true
+			},
+			"testPassFailCounts": {
+				"Verify that deleting an occupied slip sets boat at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"598"
+			],
+			"allTests": [
+				{
+					"Verify that deleting an occupied slip sets boat at sea": true
+				}
+			],
+			"time": "598",
+			"totalRequestTime": "598",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 18,
+	"totalFail": 0,
+	"totalTime": 13218,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "1.1.1 Add Boat #1",
+			"id": "dd038cf3-aa56-a68f-c689-71f93d7076e2",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.1.1 Add Boat #2",
+			"id": "795d3522-4d96-8483-1593-3d6510788c53",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.1.1 Add Boat #3",
+			"id": "a30a06f0-53b3-d95f-21db-cf44623aa5f9",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created boats start at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.1.2 Add Slip #1 (Invalid Data is Ignored)",
+			"id": "df46934b-bb6c-04fb-f2c9-d490ba4063ef",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.1.2 Add Slip #2",
+			"id": "64be1a63-68eb-f43f-0a53-3ecac050c5a8",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.1.2 Add Slip #3",
+			"id": "bca4674e-0d4f-e838-d162-74b919b1a7af",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that all newly created slips are empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.4.1 View a List of Boats",
+			"id": "bc550a4b-0025-61bd-0611-32f2b687cabf",
+			"url": "http://tida496hw3.appspot.com/boats",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a list of boats is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.4.1 View a Single Boat",
+			"id": "12ca771b-fab1-656d-8c45-75b1f7548f2b",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.4.1 View a List of Slips",
+			"id": "76c341c4-1b39-02f9-1f3d-c02541d9e035",
+			"url": "http://tida496hw3.appspot.com/slips",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a list of boats is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.4.1 View a Single Slip",
+			"id": "21a55015-72eb-4947-3a30-606d6c0ca237",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat in Empty Slip",
+			"id": "505b4a47-353c-e8f1-23ce-684c0e0a94c3",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a boat can successfully arrive at an empty slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.3 & 3.2 Park a Boat in Occuppied Slip",
+			"id": "87b84092-55b0-6ae5-e646-af0aceecf5c7",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a boat cannot arrive at an occupied slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.4.2 View a Specific Boat in Slip",
+			"id": "3450ed4d-4d92-ca64-2d44-1ce9cbdce7e4",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM/boat",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a single boat is correctly returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.3 Modify a Boat's Data",
+			"id": "de31203f-cc1d-20f5-d64d-23bd741a2c78",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJmD3AgM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a boat's data can be modified": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 1",
+			"id": "4d6f2ed1-a49b-b08a-fd1e-f82fb44af563",
+			"url": "https://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that a boat can be set at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "2 Setting a Boat to be at Sea Part 2",
+			"id": "ad8671dc-da1c-aedb-2a8a-41f46644955d",
+			"url": "https://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that setting a boat at sea empties out the previously occupied slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 1",
+			"id": "0954e586-6879-a51a-fed8-9161d4f163c0",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 1",
+			"id": "6ec0eeac-e642-6d2d-a315-04f82a97b75a",
+			"url": "https://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAgJnSxQoM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "2.1 Delete a Parked Boat Part 2",
+			"id": "1361d947-60c8-453f-6b09-811deb0ca4df",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgO2tsggM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that deleting a parked boat empties out the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1.3 & 3.1 Park a Boat for Deletion 2",
+			"id": "9a23c184-627e-5950-edac-5cea4dadd446",
+			"url": "http://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgK_IwAoM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 1",
+			"id": "6eba6eb1-b923-a303-4df6-419dfa4a5442",
+			"url": "https://tida496hw3.appspot.com/slips/agxrfnRpZGE0OTZodzNyEQsSBFNsaXAYgICAgK_IwAoM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "2.2 Delete an Occupied Slip Part 2",
+			"id": "cd8c51c3-371a-c40f-ed2b-d4832756eb47",
+			"url": "http://tida496hw3.appspot.com/boats/agxrfnRpZGE0OTZodzNyEQsSBEJvYXQYgICAwMjFzAgM",
+			"time": "2018-02-09T12:02:27.815Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Verify that deleting an occupied slip sets boat at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
